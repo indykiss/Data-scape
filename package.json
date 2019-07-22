@@ -1,0 +1,27 @@
+{
+  "name": "data-scape-api",
+  "version": "0.1.0",
+  "main": "index.js",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-react": "^0.3.1",
+    "react": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "0.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

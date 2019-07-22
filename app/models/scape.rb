@@ -1,0 +1,2 @@
+class Scape < ApplicationRecord
+end
