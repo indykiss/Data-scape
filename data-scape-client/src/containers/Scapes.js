@@ -15,12 +15,12 @@ class Scapes extends Component {
     render () {
         return (
         <div>
-        <h1> All the scapes </h1>
-        {this.props.scapes.map(scape => 
+            <h1> All the scapes </h1>
+            <ScapeForm />
+            {this.props.scapes.map(scape => 
             <ScapeCard key={scape.id} scape={scape} />
-        )}
-        <ScapeForm />
-    </div>
+            )}
+        </div>
     )}
 }
 

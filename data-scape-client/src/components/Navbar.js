@@ -1,22 +1,35 @@
 
+import React from 'react';
+import Scapes from '../containers/Scapes'
+import About from './About'
+import Home from './Home'
+import Knowledge from './Knowledge'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 
-class NavBar extends Component {
-  render() {
+const Navbar = () => {
     return (
-      <React.Fragment>
-        <nav className="navbar">
-           <li><NavLink to="/">Home</NavLink></li>
-           <li><NavLink to="/scape/new">Make a scape</NavLink></li>
-           <li><NavLink to="/about">About</NavLink></li>
-           <li><NavLink to="/knowledge">Knowledge Center</NavLink></li>
-           <li><NavLink to="/scapes">Scapes</NavLink></li>
-        </nav>
-      </React.Fragment>
-    );
-  }
-}
- 
-export default NavBar;
+        <Router>
+        <div>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/knowledge">Knowledge</Link>
+            </li>
+          </ul>
+  
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/knowledge" component={Knowledge} />
+        </div>
+      </Router>
+    
+)}
+
+
+export default Navbar;
