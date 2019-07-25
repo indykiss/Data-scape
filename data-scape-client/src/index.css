@@ -15,8 +15,8 @@ code {
 div.card {
   transition: box-shadow .3s;
   width: 200px;
-  height: 150px;
-  margin: 20px;
+  height: 200px;
+  margin: 80px;
   border-radius:10px;
   align-content: center;
   border: 1px solid #ccc;

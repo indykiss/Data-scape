@@ -26,6 +26,8 @@ const addScape = scape => {
     }
 }
 
+// Don't name everything scape
+
 export const createScape = scape => {
     return dispatch => {
     return fetch(`http://localhost:3000/api/scapes`,  {

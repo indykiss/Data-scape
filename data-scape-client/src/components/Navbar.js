@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Scapes from '../containers/Scapes'
+//import Scapes from '../containers/Scapes'
 import About from './About'
 import Home from './Home'
 import Knowledge from './Knowledge'
@@ -30,6 +30,5 @@ const Navbar = () => {
       </Router>
     
 )}
-
 
 export default Navbar;
