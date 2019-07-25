@@ -6,7 +6,7 @@ Extra down the road, I'd like to add in another external API that illustrates th
 Data-scape uses a rails api backend and a react-redux front end. 
 
 
-This project was bootstrapped with Create React App.
+#This project was bootstrapped with Create React App.
 
 Available Scripts
 In the project directory, you can run:
