@@ -4,7 +4,8 @@ const initialState = {
     stock: '', 
     history: '', 
     start_date: "2018-01-01", 
-    end_date: "2018-01-03"
+    end_date: "2018-01-03",
+    counts: 1
 }
 
 export default (state = initialState, action) => {
