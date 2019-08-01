@@ -30,28 +30,6 @@ class Scapes extends Component {
         this.props.getScapes()
     }
 
-    state = {
-        countClick: 1
-    }
-
-    // handleClick = () => {
-    //     this.setState(({count}) => ({
-    //         count: count + 1
-    //     }) 
-    // )}
-
-    // render() {
-    //     return <button onClick={this.handleClick}>{this.state.count}</button>;
-    //   }
-
-    handleEvent = () => {
-        console.log("handleEvent click click")
-    }
-
-    handleClick = () => {
-        this.props.onVote(this.props.name);
-    }
-
     render () {
         return (
         <div>
@@ -66,7 +44,6 @@ class Scapes extends Component {
                 End date: {scape.end_date} <br/> 
                 ID: {scape.id}<br/>
                 Vote counts: {scape.counts}
-                <button onClick={this.handleClick}>Click click</button>
                 </h5>
                 </div>    
             )}

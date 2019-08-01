@@ -15,7 +15,8 @@ scapes = Scape.create(
             close: "203"
             },
         start_date: 181201,
-        end_date: 181215
+        end_date: 181215,
+        count: 1
         },
         { name: "Restaurant brands scape", 
         stock: "QSR",
@@ -24,7 +25,8 @@ scapes = Scape.create(
             close: "25"
             },
         start_date: 19110,
-        end_date: 19220
+        end_date: 19220,
+        count: 1
         } 
     ]
 )
