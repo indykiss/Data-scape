@@ -16,7 +16,6 @@ class CommentForm extends Component {
     handleOnSubmit = (e) => {
         e.preventDefault();
         var text=this.state.text;
-        console.log(text)
         this.props.onFormSubmit({ text: text});
         this.setState({text: ''})
     }
