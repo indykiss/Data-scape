@@ -23,6 +23,8 @@ class CommentBox extends Component  {
         this.setState({
           comments: updatedList
         })
+
+        this.state.comments = this.state.comments.conacat(comment)
       }
 
     render() {

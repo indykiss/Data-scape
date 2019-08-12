@@ -5,25 +5,6 @@ import { connect } from 'react-redux'
 import ScapeForm from './ScapeForm'
 import { getScapes } from '../actions/scapes'
 
-// Ok so I have an incrementing vote going
-// Just need to fix it so that the count is for each scape
-
-// export class Counter extends Component {
-//     state = {
-//         count: 1
-//     }
-
-//     handleClick = () => {
-//         this.setState(({countStart}) => ({
-//             count: countStart + 1
-//         }) 
-//     )}
-
-//     render() {
-//         return <button onClick={this.handleClick}>{this.state.count}</button>;
-//       }
-// }
-
 class Scapes extends Component {
 
     componentDidMount() {

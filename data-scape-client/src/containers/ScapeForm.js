@@ -24,7 +24,7 @@ class ScapeForm extends Component {
         const {name, stock, start_date, end_date} = this.props.scapeFormData;
         return (
             <div>
-            <h2>Add a ScapeForm</h2>
+            <h2>Scape form</h2>
             <form onSubmit={this.handleOnSubmit}>
             <div><label>Name this scape</label>
             <input
