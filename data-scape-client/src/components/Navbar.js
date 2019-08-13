@@ -6,11 +6,13 @@ import Home from './Home'
 import Knowledge from './Knowledge'
 import ScapeForm from '../containers/ScapeForm'
 import Scapes from '../containers/Scapes'
+import Navbar from 'react-bootstrap/Navbar'
+
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
-const Navbar = () => {
+const NavBarLinks = () => {
     return (
         <Router>
         <div>
@@ -43,4 +45,4 @@ const Navbar = () => {
     
 )}
 
-export default Navbar;
+export default NavBarLinks;
