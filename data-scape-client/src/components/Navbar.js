@@ -6,7 +6,7 @@ import Home from './Home'
 import Knowledge from './Knowledge'
 import ScapeForm from '../containers/ScapeForm'
 import Scapes from '../containers/Scapes'
-import Navbar from 'react-bootstrap/Navbar'
+import { Navbar, NavLink, Nav } from 'react-bootstrap/Navbar'
 
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -16,14 +16,15 @@ const NavBarLinks = () => {
     return (
         <Router>
         <div>
+        <Navbar bg="light" expand="lg">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink href="/">Home</NavLink>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <NavLink href="/about">About</NavLink>
             </li>
-            <li>
+            {/* <li>
               <Link to="/knowledge">Knowledge</Link>
             </li>
             <li>
@@ -31,7 +32,7 @@ const NavBarLinks = () => {
             </li>
             <li>
               <Link to="/scapes">See all scapes</Link>
-            </li>
+            </li> */}
           </ul>
   
           <Route exact path="/" component={Home} />
@@ -39,10 +40,9 @@ const NavBarLinks = () => {
           <Route path="/knowledge" component={Knowledge} />
           <Route exact path="/scapeform" component={ScapeForm} />
           <Route exact path="/scapes" component={Scapes} />
-
+          </ Navbar>
         </div>
-      </Router>
-    
+      </Router>    
 )}
 
 export default NavBarLinks;
