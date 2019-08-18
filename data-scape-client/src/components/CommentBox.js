@@ -4,9 +4,6 @@ import Comment from './Comment'
 import CommentForm from './CommentForm'
 
 var list = [
-    {id: 0, text: "first comment"},
-    {id: 1, text: "second comment"},
-    {id: 2, text: "third comment"}
 ]
 
 class CommentBox extends Component  {
@@ -24,7 +21,7 @@ class CommentBox extends Component  {
           comments: updatedList
         })
 
-        this.state.comments = this.state.comments.conacat(comment)
+        this.state.comments = this.state.comments.concat(comment)
       }
 
     render() {
