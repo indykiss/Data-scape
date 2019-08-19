@@ -22,7 +22,6 @@ import getStocks from '../actions/getStocks'
 //       })
 // }
 
-
 class Stocks extends Component {
 
     componentDidMount() {
@@ -43,4 +42,4 @@ const mapStateToProps = (state) => {
     })
 }
 
-export default connect( mapStateToProps, getStocks) (Stocks);
+export default connect( mapStateToProps, {getStocks} ) (Stocks);
