@@ -1,8 +1,6 @@
 
 // No persistence, so no ID
 import React, { Component } from 'react'
-import ScapeForm from './ScapeForm'
-import Scapes from './Scapes'
 import Stocks from './FetchStocks'
 import NavBarLinks from '../components/Navbar'
 import CommentBox from '../components/CommentBox'
@@ -14,7 +12,7 @@ class App extends Component {
         return(
             <div>
             <NavBarLinks />
-            {/* <Stocks /> */}
+            <Stocks />
             <CommentBox />
             </div>
         )
