@@ -4,7 +4,7 @@
 
 
 
-export default function getStocks() {
+export const getStocks = () => {
     // const getURL = () => {
     //     //https://api.worldtradingdata.com/api/v1/history?symbol=AAPL&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz
     //     return (
@@ -12,7 +12,7 @@ export default function getStocks() {
     //       "https://api.worldtradingdata.com/api/v1/history?symbol=SBUX&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz"
     //     )
     //   }
-
+    return dispatch => {
       return fetch(`https://api.worldtradingdata.com/api/v1/history?symbol=SBUX&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz`)
             .then(response => response.json())
             .then((responseData) => {
@@ -21,9 +21,9 @@ export default function getStocks() {
               })
               .catch(error => this.setState({ error }));
       })
+    }
 }
 
-// for some reason, my this.getGURL is a problem
 
 
 

@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import getStocks from '../actions/getStocks'
+import { getStocks } from '../actions/getStocks'
 
 // const getURL = () => {
 //     //https://api.worldtradingdata.com/api/v1/history?symbol=AAPL&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz
@@ -30,7 +30,7 @@ class Stocks extends Component {
 
     render () {
         return (
-            <h3>{console.log()}</h3>
+            <h3>{console.log(this.props.getStocks())}</h3>
         )}
 }
 
