@@ -30,7 +30,7 @@ class Stocks extends Component {
 
     render () {
         return (
-            <h3>{console.log(this.props.getStocks())}</h3>
+            <h3>{console.log(this.props)}</h3>
         )}
 }
 

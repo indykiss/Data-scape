@@ -16,11 +16,12 @@ export const getStocks = () => {
       return fetch(`https://api.worldtradingdata.com/api/v1/history?symbol=SBUX&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz`)
             .then(response => response.json())
             .then((responseData) => {
+              console.log(responseData.name)
               this.setState({ stock_name: responseData.name,
                 history: responseData.history
               })
-              .catch(error => this.setState({ error }));
-      })
+              .catch(errors => console.log(errors))
+            })
     }
 }
 
