@@ -17,13 +17,15 @@ export const getStocks = ()=> {
       return fetch(`https://api.worldtradingdata.com/api/v1/history?symbol=SBUX&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz`)
             .then(response => response.json())
             .then(responseData => {
-              console.log(responseData.name)
-              // The below line is broken
+              let actualData = []
 
-              this.setState({ stock_name: responseData.name,
-                history: responseData.history}, function() {
-                  console.log(this.state.stock_name)
-                }).bind(this)
+              actualData.push(responseData.name)
+              actualData.push(responseData.history)
+              return actualData;
+              // this.setState({ stock_name: responseData.name,
+              //   history: responseData.history}, function() {
+              //     console.log(this.state.stock_name)
+              //   }).bind(this)
               // .catch(errors => console.log(errors))
             })
     }
