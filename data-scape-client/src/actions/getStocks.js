@@ -1,5 +1,8 @@
 
 
+// I AM NOT USED. I MOVED MY FETCH TO EXTERNAL API TO
+// THE ACTUAL CONTAINER
+
 // Add the external and internal fetchs here, then export and import 
 
 

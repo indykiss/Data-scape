@@ -7,6 +7,19 @@ import { createScape } from '../actions/scapes'
 
 class ScapeForm extends Component {
 
+    componentDidMount() {
+            // fetch(`https://api.worldtradingdata.com/api/v1/history?symbol=SBUX&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz`)
+        fetch(`https://api.worldtradingdata.com/api/v1/history?symbol=` + {stock} + `&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz`)
+            .then(response => response.json())
+            .then(responseData => {
+              this.setState({
+                stock: responseData.name, 
+                history: responseData.history
+              })
+            })
+        }
+// 1st step is to change the handleOnChange to contact API to fetch the desired stock 
+
     handleOnChange = event => {
         const { name, value } = event.target;
         const currentScapeFormData = Object.assign({}, this.props.scapeFormData, {
