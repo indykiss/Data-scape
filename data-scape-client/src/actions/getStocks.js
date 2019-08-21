@@ -4,8 +4,7 @@
 
 
 
-export const getStocks = ()=> {
-  let self = this;
+export const getStocks = () => {
     // const getURL = () => {
     //     //https://api.worldtradingdata.com/api/v1/history?symbol=AAPL&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz
     //     return (
@@ -17,11 +16,12 @@ export const getStocks = ()=> {
       return fetch(`https://api.worldtradingdata.com/api/v1/history?symbol=SBUX&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz`)
             .then(response => response.json())
             .then(responseData => {
-              let actualData = []
+              console.log(responseData.name)
 
-              actualData.push(responseData.name)
-              actualData.push(responseData.history)
-              return actualData;
+              this.setState({
+                stock_name: responseData.name, 
+                history: responseData.history
+            }).bind(this)
               // this.setState({ stock_name: responseData.name,
               //   history: responseData.history}, function() {
               //     console.log(this.state.stock_name)
