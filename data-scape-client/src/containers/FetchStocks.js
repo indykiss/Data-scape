@@ -24,22 +24,33 @@ import { getStocks } from '../actions/getStocks'
 
 class Stocks extends Component {
 
+    // great so this works 
+    // next step is to add in handle on change where ppl can input the 
+    // stock they are looking for 
     componentDidMount() {
-        this.props.getStocks()
+        fetch(`https://api.worldtradingdata.com/api/v1/history?symbol=SBUX&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz`)
+        .then(response => response.json())
+        .then(responseData => {
+          console.log(responseData.name)
+          this.setState({
+            stock_name: responseData.name, 
+            history: responseData.history
+          })
+        })
     }
 
     render () {
         return (
-            <h3>{console.log(this.props)}</h3>
+            <h3>{console.log(this.state)}</h3>
         )}
 }
 
 
-const mapStateToProps = (state) => {
-    return ({
-        stock_name: state.stock_name,
-        history: state.history
-    })
-}
+// const mapStateToProps = (state) => {
+//     return ({
+//         stock_name: state.stock_name,
+//         history: state.history
+//     })
+// }
 
-export default connect( mapStateToProps, {getStocks} ) (Stocks);
+export default Stocks;
