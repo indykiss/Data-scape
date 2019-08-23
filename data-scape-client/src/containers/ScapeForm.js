@@ -19,8 +19,8 @@ class ScapeForm extends Component {
                 stock: responseData.name, 
                 history: responseData.history
               })
-            })
-        }
+        })
+    }
 // 1st step is to change the handleOnChange to contact API to fetch the desired stock 
 
     handleOnChange = event => {
@@ -29,6 +29,10 @@ class ScapeForm extends Component {
             [name]: value
         })
         this.props.updateScapeFormData(currentScapeFormData)
+    }
+
+    handleStockInput = event => {
+        // maybe handle stock price change differently
     }
 
     handleOnSubmit = event => {
