@@ -10,9 +10,9 @@ class ScapeForm extends Component {
     // Maybe I need to make a post request with this: 
     // Since I'm returning the api data, not loading it
     // before the actions happen
-    componentDidMount() {
-        fetch(`https://api.worldtradingdata.com/api/v1/history?symbol=SBUX&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz`)
-        // fetch(`https://api.worldtradingdata.com/api/v1/history?symbol=${this.state.stock}&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz`)
+    componentDidMount(stock) {
+        // fetch(`https://api.worldtradingdata.com/api/v1/history?symbol=SBUX&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz`)
+        fetch(`https://api.worldtradingdata.com/api/v1/history?symbol=${stock}&api_token=EDP0CVswPgdwU2XzgIfVhkhhMSB9wtvUuSa5zth0aIbIE856xVdrVyoqB1mz`)
             .then(response => response.json())
             .then(responseData => {
               this.setState({
