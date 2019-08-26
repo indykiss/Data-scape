@@ -13,7 +13,6 @@ class App extends Component {
             <div>
             <NavBarLinks />
             <Stocks />
-            <CommentBox />
             </div>
         )
     }

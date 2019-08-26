@@ -14,7 +14,7 @@ var data = [{
 class App extends Component {
 
   state = {
-    comments: [], 
+    comments: []
   };
 
   componentDidMount() {

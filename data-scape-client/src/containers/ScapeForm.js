@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { updateScapeFormData } from '../actions/scapeForm'
 import { createScape } from '../actions/scapes'
+import CommentBox from '../components/CommentBox'
 
 
 class ScapeForm extends Component {
@@ -76,6 +77,9 @@ class ScapeForm extends Component {
             /></div>
             <button type="submit">Add Scape</button>
             </form>
+            <br /><br />
+            <CommentBox />
+
             </div>
         )
     }

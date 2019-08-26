@@ -15,7 +15,6 @@ class Scapes extends Component {
         return (
         <div>
             <h1> All the scapes </h1>
-            <ScapeForm />
             {this.props.scapes.map(scape => 
              <div key={scape.id} className='card'>
                 <h5>Name: {scape.name} <br/>
@@ -23,8 +22,8 @@ class Scapes extends Component {
                 History: {scape.history} <br/>
                 Start date: {scape.start_date} <br/>
                 End date: {scape.end_date} <br/> 
-                ID: {scape.id}<br/>
-                Vote counts: {scape.counts}
+                {/* ID: {scape.id}<br/>
+                Vote counts: {scape.counts} */}
                 </h5>
                 </div>    
             )}

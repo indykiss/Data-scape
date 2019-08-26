@@ -10,6 +10,6 @@ export const updateScapeFormData = scapeFormData => {
 
 export const resetScapeForm = () => {
     return {
-        type: 'RESET_SCAPE_FORM',
+        type: 'RESET_SCAPE_FORM'
     }
 }

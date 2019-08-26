@@ -5,14 +5,13 @@ import React from 'react';
 const About = () => {
   return (
     <div className="about">
-      <h2>About</h2>
-      <h3>Want to see how a stock price is doing? Use Datascape to find out. 
-          Eventually, I'd like to make this a matrix correlation. But for now, we scape.
-      </h3>
+      <h3>About</h3>
+      <h4>Want to see how a stock price is doing? Use Datascape to find out. 
+      </h4>
       <br></br>
-      <h2>Contact Us</h2>
-      <h3>For further inquiries please email indirak@alumni.princeton.edu. 
-      </h3>
+      <h3>Contact Us</h3>
+      <h4>For further inquiries please email indirak@alumni.princeton.edu. 
+      </h4>
     </div>
   )
 }
