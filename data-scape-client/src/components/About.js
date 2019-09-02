@@ -9,7 +9,7 @@ const About = () => {
       <h4>Want to see how a stock price is doing? Use Datascape to find out. 
       </h4>
       <br></br>
-      <h3>Contact Us</h3>
+      <h3>Contact</h3>
       <h4>For further inquiries please email indirak@alumni.princeton.edu. 
       </h4>
     </div>

@@ -17,7 +17,6 @@ export class Counter extends Component {
       }
 }
 
-
 const ScapeCard=({scape}) => (
     <div key={scape.id} className='card'>
         <h4> Name: {scape.name}</h4>
