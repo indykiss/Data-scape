@@ -35,3 +35,6 @@ code open .
 
 API used for adding stock price trends over a period of time (feature in progress):
 https://www.worldtradingdata.com/ 
+
+# License
+The web app is available as open source under the terms of the MIT License.
