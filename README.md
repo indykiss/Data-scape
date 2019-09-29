@@ -11,8 +11,7 @@ Data-scape uses a rails api backend and a react-redux front end.
 
 **Built with: <br>
 Rails API on the backend, Javascript, React frameworks for the front-end, and Redux for state management**
-
-<br></br>
+<br>
 This project was bootstrapped with Create React App
 
 You can learn more in the Create React App documentation: https://reactjs.org/docs/create-a-new-react-app.html 
