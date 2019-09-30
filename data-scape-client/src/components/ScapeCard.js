@@ -30,6 +30,7 @@ const ScapeCard=({scape}) => (
 
 export default ScapeCard;
 
+
 // Thinking in React blog post , react documentation
 // Finish this feature 
 // import variables is called something 
